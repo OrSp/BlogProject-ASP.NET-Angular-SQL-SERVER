@@ -11,7 +11,7 @@ using System.Data;
 
 namespace BlogLab.Repository
 {
-    class BlogCommentRepository : IBlogCommentRepository
+    public class BlogCommentRepository : IBlogCommentRepository
     {
         private readonly IConfiguration _config;
 
