@@ -104,8 +104,10 @@ namespace UdemyBlog_01.Controllers
                 else
                 {
                     return BadRequest("Photo was not uploaded by the current user!");
-                }
+                }        
             }
+
+            return BadRequest("Photo does not exist!");
         }
 
 
