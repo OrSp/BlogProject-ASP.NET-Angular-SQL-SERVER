@@ -1,8 +1,8 @@
 export class BlogCommentCreate {
     constructor(
-        blogCommentId: number,
-        blogId: number,
-        content: string,
-        parentBlogCommentId?: number
+        public blogCommentId: number,
+        public blogId: number,
+        public publiccontent: string,
+        public parentBlogCommentId?: number
     ) {}
 }

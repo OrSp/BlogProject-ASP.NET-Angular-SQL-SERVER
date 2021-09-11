@@ -1,9 +1,9 @@
 export class ApplicationUser {
     constructor(
-        applicationUserId: number,
-        username: string,
-        fullname: string,
-        email: string,
-        token: string
+        public applicationUserId: number,
+        public username: string,
+        public fullname: string,
+        public email: string,
+        public token: string
     ) {}
 }

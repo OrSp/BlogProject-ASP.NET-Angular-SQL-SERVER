@@ -1,6 +1,6 @@
 export class PagedResult<T> {
     constructor(
-        items: Array<T>,
-        totalCount: number
+        public items: Array<T>,
+        public totalCount: number
     ) {}
 }

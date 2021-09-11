@@ -1,12 +1,12 @@
 export class BlogComment {
     constructor(
-        blogCommentId: number,
-        blogId: number,
-        content: string,
-        username: string,
-        applicationUserId: number,
-        publishDate: Date,
-        updateDate: Date,
-        parentBlogCommentId?: number
+        public blogCommentId: number,
+        public blogId: number,
+        public content: string,
+        public username: string,
+        public applicationUserId: number,
+        public publishDate: Date,
+        public updateDate: Date,
+        public parentBlogCommentId?: number
     ) {}
 }

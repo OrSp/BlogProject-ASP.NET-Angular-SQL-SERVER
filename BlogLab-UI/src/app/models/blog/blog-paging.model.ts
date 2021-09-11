@@ -1,7 +1,7 @@
 export class BlogPaging {
 
     constructor(
-        page: number,
-        pageSize: number
+        public page: number,
+        public pageSize: number
     ) {}
 }

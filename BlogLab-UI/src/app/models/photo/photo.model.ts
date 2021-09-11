@@ -1,12 +1,12 @@
 export class Photo {
     constructor(
-        photoId: number,
-        applicationUserId: number,
-        imageUrl: string,
-        publicId: string,
-        description: string,
-        publishDate : Date,
-        updateDate: Date,
-        deleteConfirm: boolean = false
+        public photoId: number,
+        public applicationUserId: number,
+        public imageUrl: string,
+        public publicId: string,
+        public description: string,
+        public publishDate : Date,
+        public updateDate: Date,
+        public deleteConfirm: boolean = false
     ) {}
 }

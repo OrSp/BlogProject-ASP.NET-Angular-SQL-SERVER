@@ -1,8 +1,8 @@
 export class BlogCreate {
     constructor(
-        blogId: number,
-        title: string,
-        content: string,
-        photoId?: number
+        public blogId: number,
+        public title: string,
+        public publiccontent: string,
+        public photoId?: number
     ) {}
 }
