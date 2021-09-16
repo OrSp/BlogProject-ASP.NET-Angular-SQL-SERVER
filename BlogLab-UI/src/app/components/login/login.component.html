@@ -5,6 +5,7 @@
             <p class="text-dark">Get to your dashboard and start blogging.</p>
 
             <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                
                 <div class="form-group">
                     <input type="text" 
                             [ngClass]="{'is-invalid' : hasErrors('username') && isTouched('username'),
