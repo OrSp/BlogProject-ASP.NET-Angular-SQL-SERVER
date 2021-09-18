@@ -36,7 +36,7 @@ export class AccountService {
     return this.http.post(`${environment.webApi}/Account/register`, model).pipe(
       map((user : ApplicationUser) => {
         if (user) {
-          localStorage.setItem('blogLab-this.currentUser', JSON.stringify(user));
+          localStorage.setItem('blogLab-currentUser', JSON.stringify(user));
         }
 
         return user;
