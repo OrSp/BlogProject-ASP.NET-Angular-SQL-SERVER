@@ -4,6 +4,7 @@ import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
@@ -63,7 +64,8 @@ import { ErrorInterceptor } from './interceptor/error.interceptor';
     }),
     BsDropdownModule.forRoot(),
     CollapseModule.forRoot(),
-    TypeaheadModule.forRoot()
+    TypeaheadModule.forRoot(),
+    CarouselModule.forRoot()
   ],
   providers: [
     HttpClient,
