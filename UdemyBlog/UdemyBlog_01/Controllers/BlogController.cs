@@ -27,7 +27,7 @@ namespace UdemyBlog_01.Controllers
         [Authorize]
         [HttpPost]
 
-        public async Task<ActionResult<Blog>> Creat(BlogCreate blogCreate)
+        public async Task<ActionResult<Blog>> Create(BlogCreate blogCreate)
         {
             int applicationUserId = int.Parse(User.Claims.First(i => i.Type == JwtRegisteredClaimNames.NameId).Value);
 

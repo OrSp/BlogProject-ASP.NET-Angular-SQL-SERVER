@@ -34,7 +34,7 @@ namespace UdemyBlog_01.Controllers
             return Ok(createdBlogComment);
         }
 
-        [HttpGet("blogId")]
+        [HttpGet("{blogId}")]
 
         public async Task<ActionResult<List<BlogComment>>> GetAll(int blogId)
         {
